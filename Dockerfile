@@ -7,6 +7,7 @@ COPY install.sh /install.sh
 RUN chmod +x /entrypoint.sh /install.sh; \
   /install.sh
 COPY nginx.conf /etc/nginx/nginx.conf
+VOLUME /opt/alist/data/
 ENV PUID=0 PGID=0 UMASK=022
 EXPOSE 80
 ENTRYPOINT [ "/entrypoint.sh" ]
