@@ -5,8 +5,6 @@ chown -R ${PUID}:${PGID} /opt/alist/
 
 umask ${UMASK}
 
-apk update && apk add --no-cache nginx
-
 nginx 
 
 exec su-exec ${PUID}:${PGID} nohup aria2c \
