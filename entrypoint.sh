@@ -13,6 +13,8 @@ if [ ! -d "/root/.aria2" ]; then
 else
     # 如果目录存在，则输出一条消息并继续执行脚本
     echo "目录 /root/.aria2 已经存在，volume可能已经挂载"
+    cd /root/.aria2
+    ./tracker.sh
 fi
  
 
