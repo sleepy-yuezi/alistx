@@ -9,6 +9,7 @@ if [ ! -d "/root/.aria2" ]; then
     sed -i 's|rpc-secret|#rpc-secret|g' ./aria2.conf
     touch /root/.aria2/aria2.session
     ./tracker.sh
+    echo "完成aria2配置！"
 else
     # 如果目录存在，则输出一条消息并继续执行脚本
     echo "目录 /root/.aria2 已经存在，volume可能已经挂载"
