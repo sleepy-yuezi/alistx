@@ -18,7 +18,7 @@ else
     echo "更新tracker完成"
 fi
 
-cd
+cd /opt/alist
 
 chown -R ${PUID}:${PGID} /opt/alist/
 
