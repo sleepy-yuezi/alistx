@@ -15,6 +15,7 @@ else
     echo "目录 /root/.aria2 已经存在，volume可能已经挂载"
     cd /root/.aria2
     ./tracker.sh
+    echo "更新tracker完成"
 fi
  
 
