@@ -24,7 +24,6 @@ chown -R ${PUID}:${PGID} /opt/alist/
 
 umask ${UMASK}
 
-nginx 
 
 exec su-exec ${PUID}:${PGID} nohup aria2c \
   --enable-rpc \
@@ -33,3 +32,5 @@ exec su-exec ${PUID}:${PGID} nohup aria2c \
   >/dev/null 2>&1 &
 
 exec su-exec ${PUID}:${PGID} ./alist server --no-prefix
+
+nginx
